@@ -25,7 +25,7 @@ class _CustomTimerState extends State<CustomTimer>
 
     ///create controller in the initstate
     _controller = AnimationController(
-      duration: Duration(seconds: (10).toInt()),
+      duration: Duration(seconds: (10)),
       vsync: this,
     );
 
@@ -232,7 +232,7 @@ class SlideItem extends StatelessWidget {
                     .toStringAsFixed(0),
             style: TextStyle(
                 fontSize: slideList[index].number != _provider.selectedNumber
-                    ? 80
+                    ? 64
                     : 96,
                 color: Colors.white),
           ),
